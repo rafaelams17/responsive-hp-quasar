@@ -1,6 +1,4 @@
-<p align="center">
-  ![Hogwarts](src/assets/hogwarts-icon.png)
-</p>
+![Hogwarts](src/assets/hogwarts-icon.png)
 
 # Fundadores de Hogwarts
 
