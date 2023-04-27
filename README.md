@@ -1,3 +1,5 @@
+![Hogwarts](src/assets/hogwarts-icon.png)
+
 # Fundadores
 
 Um projeto focado em entender melhor como deixar os elementos mais responsivos.
@@ -14,12 +16,4 @@ npm install
 
 ```bash
 quasar dev
-```
-
-### Lint the files
-
-```bash
-yarn lint
-# or
-npm run lint
 ```
