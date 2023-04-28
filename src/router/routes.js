@@ -2,24 +2,7 @@ const routes = [
   {
     path: "/",
     component: () => import("layouts/LayoutPrincipal.vue"),
-    children: [
-      {
-        path: "",
-        component: () => import("pages/GryffindorPage.vue"),
-      },
-      {
-        path: "",
-        component: () => import("pages/HufflepuffPage.vue"),
-      },
-      {
-        path: "",
-        component: () => import("pages/RavenclawPage.vue"),
-      },
-      {
-        path: "",
-        component: () => import("pages/SlytherinPage.vue"),
-      },
-    ],
+    children: [],
   },
 
   // Always leave this as last one,
