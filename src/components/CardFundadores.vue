@@ -1,27 +1,23 @@
 <template>
-  <div class="col-5">
-    <div
-      class="row q-ma-md q-pa-md bg-white img-fundadores-reversa fundo-fundadores"
-    >
-      <div class="col q-mr-lg">
+  <q-card-section class="flex q-ma-lg bg-white">
+    <div class="flex column items-center" style="max-width: 1200px">
+      <div class="col IMG">
+        <img class="q-mb-xl" :src="img" :alt="alt" />
+      </div>
+
+      <div class="col q-ml-md">
         <h2>{{ titulo }}</h2>
-        <p class="descricao-fundadores">
+        <p class="descricao-fundadores q-pr-md">
           {{ descricao }}
         </p>
         <div class="row justify-center">
-          <a
-            href="https://harrypotter.fandom.com/pt-br/wiki/Rowena_Ravenclaw"
-            target="_blank"
-          >
+          <a :href="href" target="_blank">
             <q-btn class="btn-more col-12 col-md-auto" label="Saiba mais" />
           </a>
         </div>
       </div>
-      <div class="col img-center img-fundadores-responsiva">
-        <img :src="img" :alt="alt" />
-      </div>
     </div>
-  </div>
+  </q-card-section>
 </template>
 
 <script setup>
@@ -34,7 +30,7 @@ const props = defineProps({
   },
   descricao: {
     type: String,
-    default: "",
+    default: "Descricao",
   },
   alt: {
     type: String,
@@ -43,6 +39,10 @@ const props = defineProps({
   img: {
     type: String,
     default: "Img",
+  },
+  href: {
+    type: String,
+    default: "Link",
   },
 });
 </script>
@@ -55,7 +55,7 @@ a {
 }
 h2 {
   font-family: "Cinzel", serif;
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
 }
 
@@ -63,49 +63,7 @@ h2 {
   text-indent: 1.5em;
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-@media (max-width: 1000px) and (min-width: 400px) {
-  .img-center {
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 1500px) and (min-width: 100px) {
-  .img-fundadores-reversa {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-
-@media (max-width: 700px) {
-  .fundo-fundadores {
-    width: 500px;
-  }
-}
-
-@media (max-width: 280px) and (min-width: 200px) {
-  .fundo-fundadores {
-    width: 150px;
-  }
-}
-
-@media (max-width: 393px) and (min-width: 200px) {
-  .fundo-fundadores {
-    width: 300px;
-  }
-}
-
-@media (max-width: 500px) and (min-width: 393px) {
-  .fundo-fundadores {
-    width: 340px;
-  }
-}
-
-@media (max-width: 599px) and (min-width: 500px) {
-  .fundo-fundadores {
-    width: 480px;
-  }
+  font-size: 1.3em;
 }
 
 .btn-more {
@@ -114,8 +72,17 @@ h2 {
   color: #efc250;
 }
 
-.img-fundadores-responsiva {
-  display: flex;
-  justify-content: center;
+@media (max-width: 430px) {
+  .descricao-fundadores {
+    font-size: small;
+  }
+
+  h2 {
+    font-size: medium;
+  }
+
+  .btn-more {
+    font-size: x-small;
+  }
 }
 </style>

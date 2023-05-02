@@ -1,34 +1,24 @@
 <template>
-  <div>
-    <q-card-section class="bg-white">
-      <div class="row container-main">
-        <div class="col img-center" style="width: 400px">
-          <q-card-section>
-            <div style="width: 100%">
-              <img
-                class="img-main"
-                src="/img/fundadores.svg"
-                alt="fundadores"
-              />
-            </div>
-          </q-card-section>
-        </div>
-
-        <div class="col q-px-md text-main">
-          <h1>Os fundadores de Hogwarts</h1>
-          <p class="text-fundadores">
-            São quatro bruxos que criaram a Escola de Magia e Bruxaria de
-            Hogwarts durante os tempos medievais, no Século X. Esses quatro
-            fundadores são descritos como os mais brilhantes bruxos e bruxas de
-            seu tempo, são eles Godric Gryffindor, Helga Hufflepuff, Rowena
-            Ravenclaw e Salazar Slytherin. Cada um deles criaram as suas
-            próprias casas: Grifinória, Lufa-Lufa, Corvinal e Sonserina. Criando
-            a primeira escola de magia da Grã-Bretanha.
-          </p>
-        </div>
+  <q-card-section class="bg-white">
+    <div class="row container-main">
+      <div class="col img-center" style="width: 100%">
+        <img class="img-main" src="/img/fundadores.svg" alt="fundadores" />
       </div>
-    </q-card-section>
-  </div>
+
+      <div class="col q-px-md text-main">
+        <h1>Os fundadores de Hogwarts</h1>
+        <p class="text-fundadores">
+          São quatro bruxos que criaram a Escola de Magia e Bruxaria de Hogwarts
+          durante os tempos medievais, no Século X. Esses quatro fundadores são
+          descritos como os mais brilhantes bruxos e bruxas de seu tempo, são
+          eles Godric Gryffindor, Helga Hufflepuff, Rowena Ravenclaw e Salazar
+          Slytherin. Cada um deles criaram as suas próprias casas: Grifinória,
+          Lufa-Lufa, Corvinal e Sonserina. Criando a primeira escola de magia da
+          Grã-Bretanha.
+        </p>
+      </div>
+    </div>
+  </q-card-section>
 </template>
 
 <script setup></script>

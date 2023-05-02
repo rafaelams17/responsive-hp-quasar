@@ -1,26 +1,34 @@
 <template>
   <div>
-    <q-card-section class="q-ma-sm footer row justify-evenly">
-      <div class="col-4 text-center text-footer">
+    <q-card-section class="q-ma-sm footer row justify-center">
+      <div class="col-3 text-center text-footer">
         <p>Desenvolvido por Rafaela</p>
       </div>
 
-      <div class="col-4 text-center img-2">
-        <a href="https://www.linkedin.com/in/rafaelasantoss/" target="_blank"
-          ><img
-            class="q-mr-lg img-footer"
-            src="../assets/linkedin.svg"
-            alt="Linkedin"
-        /></a>
-        <a href="https://www.instagram.com/rafaa_vs23/" target="_blank"
-          ><img
-            class="q-mr-lg img-footer"
-            src="../assets/instagram.svg"
-            alt="Instagram"
-        /></a>
-        <a href="https://github.com/rafaelams17" target="_blank"
-          ><img class="img-footer" src="../assets/github.svg" alt="GitHub"
-        /></a>
+      <div class="col-3 text-center img-2">
+        <div class="row">
+          <a
+            class="col"
+            href="https://www.linkedin.com/in/rafaelasantoss/"
+            target="_blank"
+            ><img
+              class="img-footer"
+              src="../assets/linkedin.svg"
+              alt="Linkedin"
+          /></a>
+          <a
+            class="col"
+            href="https://www.instagram.com/rafaa_vs23/"
+            target="_blank"
+            ><img
+              class="img-footer"
+              src="../assets/instagram.svg"
+              alt="Instagram"
+          /></a>
+          <a class="col" href="https://github.com/rafaelams17" target="_blank"
+            ><img class="img-footer" src="../assets/github.svg" alt="GitHub"
+          /></a>
+        </div>
       </div>
     </q-card-section>
     <q-card-section></q-card-section>
