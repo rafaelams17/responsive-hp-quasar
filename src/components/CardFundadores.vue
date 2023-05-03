@@ -1,6 +1,6 @@
 <template>
   <q-card-section class="flex q-ma-lg bg-white">
-    <div class="flex column items-center" style="max-width: 1200px">
+    <div class="column items-center" style="max-width: 1200px">
       <div class="col q-pb-md" style="max-height: 326px">
         <img class="IMG" :src="img" :alt="alt" />
       </div>
@@ -64,7 +64,10 @@ h2 {
   object-fit: cover;
   object-position: bottom;
 }
-
+.teste {
+  display: flex;
+  flex-direction: column;
+}
 .descricao-fundadores {
   text-indent: 1.5em;
   text-align: justify;
