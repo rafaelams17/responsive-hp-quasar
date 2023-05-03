@@ -30,7 +30,7 @@
         /></a>
         <a
           class="col"
-          href="https://www.gerbenlaw.com/trademarks/celebrities/j-k-rowling/#:~:text=Interestingly%20enough%2C%20Rowling%20does%20not,aspects%20of%20the%20wizarding%20universe."
+          href="https://www.infoescola.com/biografias/j-k-rowling/"
           target="_blank"
         >
           <q-btn
