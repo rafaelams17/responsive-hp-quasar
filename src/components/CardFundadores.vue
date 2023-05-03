@@ -1,13 +1,13 @@
 <template>
   <q-card-section class="flex q-ma-lg bg-white">
     <div class="flex column items-center" style="max-width: 1200px">
-      <div class="col IMG">
-        <img class="q-mb-xl" :src="img" :alt="alt" />
+      <div class="col q-pb-md" style="max-height: 326px">
+        <img class="IMG" :src="img" :alt="alt" />
       </div>
 
       <div class="col q-ml-md">
         <h2>{{ titulo }}</h2>
-        <p class="descricao-fundadores q-pr-md">
+        <p class="descricao-fundadores q-pr-md q-pt-sm">
           {{ descricao }}
         </p>
         <div class="row justify-center">
@@ -59,6 +59,12 @@ h2 {
   text-align: center;
 }
 
+.IMG {
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
 .descricao-fundadores {
   text-indent: 1.5em;
   text-align: justify;
@@ -72,6 +78,18 @@ h2 {
   color: #efc250;
 }
 
+@media (max-width: 760px) {
+  .descricao-fundadores {
+    font-size: medium;
+  }
+  h2 {
+    font-size: large;
+  }
+  .btn-more {
+    font-size: x-small;
+  }
+}
+
 @media (max-width: 430px) {
   .descricao-fundadores {
     font-size: small;
@@ -83,6 +101,12 @@ h2 {
 
   .btn-more {
     font-size: x-small;
+  }
+}
+
+@media (max-width: 320px) {
+  h2 {
+    margin: 0;
   }
 }
 </style>
