@@ -26,10 +26,4 @@ import CardRavenclaw from "../components/fundadores/CardRavenclaw.vue";
 import CardSlytherin from "../components/fundadores/CardSlytherin.vue";
 </script>
 
-<style scoped>
-@media (max-width: 1225px) {
-  .ADAPTAR-CAMPO {
-    width: 1000px;
-  }
-}
-</style>
+<style scoped></style>
