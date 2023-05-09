@@ -29,6 +29,6 @@ import IndexPage from "src/pages/IndexPage.vue";
 
 <style scoped>
 .BG-FUNDADORES {
-  background: url("../assets/fundo.png");
+  background: url("../assets/fundo.jpg");
 }
 </style>
